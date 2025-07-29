@@ -1,1 +1,64 @@
 
+# Robots.txt for EasyFix Garage Doors
+# Generated on 2025-07-29
+
+User-agent: *
+Allow: /
+
+# Allow all major search engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+User-agent: YandexBot
+Allow: /
+
+# Disallow admin areas and internal tools
+Disallow: /SEOAdmin
+Disallow: /SitemapGenerator
+Disallow: /admin/
+Disallow: /private/
+
+# Block aggressive crawlers that might overload the server
+User-agent: AhrefsBot
+Crawl-delay: 10
+
+User-agent: MJ12bot
+Crawl-delay: 10
+
+User-agent: SemrushBot
+Crawl-delay: 10
+
+# Allow social media bots for better sharing
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+# Sitemap location
+Sitemap: https://easyfix-garage.com/sitemap.xml
+
+# Additional directives for better SEO
+# Cache-delay: 86400
+# Visit-time: 0400-0800
+
+# Clean URLs - no query parameters for SEO bots on certain pages
+User-agent: *
+Disallow: /*?*
+Allow: /*?city=*
+Allow: /*?slug=*
